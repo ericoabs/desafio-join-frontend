@@ -30,7 +30,7 @@ const DeletarCategoria = ({ id, atualizarListagem }: IDeletarCategoria) => {
 
   return (
     <>
-      <Fab size='small' color='error' aria-label='edit' onClick={handleClickOpen}>
+      <Fab color='error' aria-label='edit' onClick={handleClickOpen}>
         <Icon icon='bx:trash-alt' />
       </Fab>
       <Dialog open={open} onClose={handleClose} aria-labelledby='form-dialog-title'>

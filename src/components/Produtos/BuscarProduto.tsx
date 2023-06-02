@@ -29,6 +29,7 @@ const BuscarProduto = () => {
     try {
       const response = await axios.get(`http://localhost/api/produtos/${id_produto}`)
       setProduto(response.data)
+      handleOpen()
     } catch (error) {
       if (error.response.status) {
         toast.error('Produto não encontrado.')
@@ -56,7 +57,6 @@ const BuscarProduto = () => {
           variant='contained'
           size={'large'}
           sx={{ alignSelf: 'center' }}
-          onClick={handleOpen}
           endIcon={<Icon icon='bx:send' />}
         >
           Enviar

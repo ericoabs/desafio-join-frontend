@@ -15,7 +15,7 @@ const navigation = (): HorizontalNavItemsType => [
   {
     title: 'Categorias',
     path: '/categorias',
-    icon: 'bx:envelope'
+    icon: 'fluent-mdl2:product-variant'
   },
   {
     path: '/acl',
